@@ -1,0 +1,321 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+/* SECTION: Banner---------------------------------------------------------------------------------- */
+.banner-img{
+    position:relative;
+}
+.banner-text{
+    position:absolute;
+    top:50%;
+    right:50%;
+    transform: translate(50%,-50%);
+    color:white;
+}
+.banner-text h2{
+    font-size:7vh; /* vh:Equal to 1% of the width of the initial containing block.*/
+    /* Để đáp ứng được kích thước trên từ thiết bị khác nhau (view) nên dùng vh,vw,vmin,vmax */
+}
+.banner-text p{
+    font-size:3.5vh;
+}
+
+.banner-text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Navigation------------------------------------------------------------------------------------- */
+.w-6{
+    width:24px;
+    height:24px;
+}
+.img-avatar {
+    width: 160px;
+    height:160px;
+    border-radius: 50%;
+    background-color:white;
+    /* Chinh hinh anh o giua */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /*Dùng để đè hình ảnh lên */
+    position:absolute;
+    bottom:-28%; /*co bootraps -140%*/
+    right:50%;
+    transform: translate(50%,-50%);
+}
+.img-avatar img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+}
+.flex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:120px;
+    
+}
+.flex-1{
+    display:flex;
+}
+.navbar-list{
+    display:flex;
+    gap:5px;
+    padding:20px 5px;
+}
+.navbar-list a{
+    text-decoration: none;
+    color:black;
+}
+.pd-40{
+    padding: 0 40px;
+}
+.center-horizontal{
+    display:flex;
+    justify-content: center;
+}
+/* navabar-list: dùng để căn giữa dòng chữ và icon */
+.navbar-list{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px  solid grey;
+    padding: 10px 30px;
+}
+/* Hieu ung khi hover vao navbar */
+.navbar-list:hover {
+    background-color:grey;
+}
+.navbar-list:hover .h-6{
+    color:white;
+}
+.navbar-list:hover .navbar-link{
+    color:white;    
+} 
+/* SECTION:INFORMATION----------------------------------------------------------------------- */
+.icon-social img{
+    width:24px;
+    height:24px;
+}
+.icon-social{
+    margin-top:20px;
+}
+.information-container{
+    display:flex;
+}
+.information-item{
+    width:50%;
+    padding:60px 80px 50px;
+}
+.cl-1{
+    background-color:#ffd8a8;
+}
+.cl-2{
+    background-color:#ffc078;
+}
+.information h2{
+    margin-bottom:22px;
+}
+.information p{
+    line-height: 1.5;
+}
+/* SECTION:BACKGROUND */
+
+.background-icon{
+    width:48px;
+    height:48px;
+}
+.background-item {
+    
+    padding:20px;
+}
+.time{
+    display:flex;
+}
+.time-color{
+    padding:5px;
+    background-color:#dbe4ff;
+    border-radius:10px;
+}
+.time p{
+    padding:5px;
+    padding-left:0;
+}
+/* Grid Layout cua tung muc Background */
+.background-item{
+    display:grid;
+    grid-template-columns:75% 25%;
+    border:1px solid grey;
+    padding:30px;
+}
+.background-item-detail{
+    grid-column: 1/-1;
+}
+.mg li{
+    margin-left:35px;
+}
+.passion-icon{
+    height:24px;
+    width:24px;
+}
+.passtion-list{
+    display:flex;
+    gap:20px;
+}
+.passtion-item{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cycle{
+    height:28px;
+    width:28px;
+    border:1px solid black;
+    border-radius:50%;
+    /* Chinh chinh giua */
+    display:flex;
+    justify-content: center;
+    align-items: center ;
+}
+.point{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px; 
+}
+.bar{
+    display:inline;
+    height:3px;
+    background-color:#ced4da;
+    width:60px;
+}
+.bar-color{
+    background-color:#91a7ff;
+}
+.language-1 p{
+    margin-bottom:12px;
+}
+.background-container-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:20px;
+    background-color:#d8f5a2;
+}
+/* .language,
+.passion,
+.skill
+{
+    height:300px;
+} */
+.passion-1{
+    display:flex;
+    gap:180px;
+    margin-bottom:30px;
+}
+.passion{
+    padding:30px;
+    border:1px solid grey;
+}
+/* SECTION:Certificate -----------------------------------------------------------------*/
+.img-certificate{
+    width:340px;
+    height:170px;
+}
+.certificate-flex{
+    display:flex;
+    justify-content:space-around;
+    background-color:#d6c08d;
+    padding:40px;
+}
+.certificate-flex ul{
+ font-weight:lighter;
+ color:grey;
+ margin-left:22px;
+}
+/* SECTION:PROJECT-------------------------------------------------------------------------- */
+.icon-project{
+    height:24px;
+    width:24px;   
+}
+.project-list-flex{
+    background-color:#ffc078;
+    display:flex;
+    gap:20px;
+    height:50px;
+    align-items: center;
+}
+.flex-project{
+    display:flex;
+    gap:10px;
+}
+.time-project{
+    background-color:#66d9e8;
+    padding:5px 25px;
+    border-radius: 20px;
+    margin-bottom:0;
+}
+
+.project-item-flex img{
+    /* height:170px; */
+    width:100%;
+}
+.project{
+    display:flex;
+    gap:70px;
+    
+}
+.project-row-3{
+    background-color:#e9ecef;
+    display:grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: auto auto auto;
+   
+   
+    
+}
+.title-project{
+    background-color:#ced4da;
+}
+.border{
+    border:1px solid grey;
+}
+.border p {
+    margin-bottom:0;
+}
+/* SECTION:CONTACT */
+.contact-flex{
+    display:flex;
+    gap:20px;
+    
+}
+.contact img{
+    width:36px;
+    height:36px;
+}
+.contact a{
+    text-decoration: none;
+    color:black;
+}
+.contact-list{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.contact{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    background-color:antiquewhite;
+    padding:20px;
+}
+
+   
+
+

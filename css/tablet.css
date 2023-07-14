@@ -1,0 +1,37 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Max-width:1200px :Nghĩa là chiều rộng tối đa là 1200px, chiều rộng mà lớn hơn 1200px thì không áp dụng được */
+/* Min-width:900px : Nghĩa là chiều rộng tối thiểu là 900px, chiều rộng mà nhỏ hơn 900px thì không áp dụng được */
+/* Code ở phía dưới là 1200px < width < 900px mới áp dụng được */
+@media screen and (max-width: 900px) and (min-width: 600px){
+     /* HInh anh:Banner */
+     .img-banner{
+        width:100%; /* */
+    }
+    /* NAVIGATION */
+    div.img-avatar{
+        display:none;
+       }
+       /* LY LICH */
+    section.background{
+        /* Dùng để căn giữa phần div.background-container-grid */
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#d8f5a2;
+       }
+    div.background-container-grid{
+      grid-template-columns:min-content min-content;
+      /* width:100%;  */ /* Nếu để giá trị này thì chiều rộng của background-cotainer-grid luôn bằng section background, ta không căn giữa được*/
+     }
+     /* CHUNG CHI */
+     .certificate-flex{
+        flex-wrap:wrap; /* Tác dụng là đảm bảo các item sẽ không vượt ra ngoài vùng chứa, khi giảm kích thước vùng chứa các item sẽ tự động nhảy xuống dướidưới*/
+     }
+     /* DU AN */
+     div.project{
+        display:block;
+     }
+
+    
+
+}

@@ -1,0 +1,45 @@
+/* Extra small devices (phones, 600px and down) */
+/* Chiều rồng tối đa là 600px, lớn hơn 600px sẽ không áp dụng được */
+/* @media only screen and (max-width: 600px) {
+    
+  
+
+} */
+@media (max-width: 600px) { 
+    /* HInh anh:Banner */
+    .img-banner{
+        width:100%; /* */
+    }
+    /* NAVIGATION */
+    div.img-avatar{
+      display:none;
+     }
+     /* div.flex và div.flex-1 thì mới xuất hiện giao diện đúng như yêu cầu : Là 4 mục sẽ xếp chồng lên nhau */
+     div.flex{
+      display:block;
+     }
+     div.flex-1{
+      display:block;
+     }
+  /* .................................................................................................. */
+  /* Thong Tin Ca Nhan */
+  div.information-container{
+   flex-direction: column;
+  }
+  div.information-item{
+    width:100%
+  }
+  /* Thong Tin Nghe Nghiep (Background) */
+  div.background-container-grid{
+    grid-template-columns: 1fr;
+  }
+  /* Chung Chi & Giai Thuong */
+  div.certificate-flex{
+    display:block;
+  }
+  /* Du An */
+  div.project{
+    display:block;
+  }
+
+}

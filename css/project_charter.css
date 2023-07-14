@@ -1,0 +1,18 @@
+.container-sm{
+    background-color:red;
+}
+.container-md{
+    background-color:blue;
+}
+.container-lg{
+    background-color:aqua;
+}
+.container-xl{
+    background-color:brown;
+}
+.container-xxl{
+    background-color:cadetblue;
+}
+.khoa{
+    border: 1px solid black;
+}

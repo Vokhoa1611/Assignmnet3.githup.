@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_Charter</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        
+.icon{
+    width:24px;
+    height:24px;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: blue;
+    gap:10px;
+    padding:10px;
+   
+}
+.list-4{
+    grid-column: 3/4;
+    grid-row: 1/-1;
+}
+.list-3{
+    grid-column:1/2;
+}
+.list-1,
+.list-2,
+.list-3,
+.list-4,
+.list-5{
+    background-color:white;
+    padding:10px;
+}
+/* GOALS */
+.goals-list-grid{
+    display:grid;
+    grid-template-columns: 30px 400px;
+    grid-template-rows: repeat(3,1fr);
+    gap:10px;
+}
+.goals-list-grid-item{
+    grid-column:2/3 ;
+}
+.center{
+grid-column: 1/2;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.text-list-1{
+grid-column:2/3;
+grid-row: 1/2;
+}
+.text-list-2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.text-list-1,
+.text-list-2,
+.text-list-3{
+    border-bottom:1px solid #ced4da;
+}
+.flex{
+    display:flex;
+    gap:50px;
+}
+/* LIST-2 */
+.grid{
+    display:grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(6,1fr);
+}
+.grid-team{
+    display:grid;
+    grid-template-columns:15% 85%;
+    grid-template-rows: repeat(4,1fr);
+    row-gap:10px;
+}
+.list-2-icon{
+    grid-column: 1/2;
+}
+.member-1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.member-2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.member-3{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+/* PRIMARY */
+.grid-primary{
+    display:grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 20px;
+}
+.primary-text{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+/* TIMELINE */
+.grid-4{
+    display:grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(7,1fr);
+    row-gap: 20px;
+}
+.center-1{
+    width:24px;
+    height:24px;
+    border:1px solid black;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#da77f2;
+    color:white;
+    grid-column: 1/2;
+}
+.grid-4-item-1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.grid-4-item-2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.grid-4-item-3{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.grid-4-item-4{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.grid-4-item-5{
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+.grid-4-item-6{
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+h3{
+    font-size:24px;
+    color:blue;
+    margin-bottom:20px;
+    border-bottom:1px solid grey;
+}
+/* REPONSITIVE */
+   /* Mobile */
+@media (max-width: 600px) {
+    div.container{
+        display:flex;
+        flex-direction: column;
+    }
+ }
+    /* Tablet */
+    @media(max-width:900px) and (min-width:600px){
+        div.container{
+            width:100%;
+            display:flex;
+            flex-direction: column;
+        }
+    }
+    </style>
+</head>
+<body>
+<section>
+    <div class="container">
+        <div class="list-1">
+            <h3>Goals</h3>
+            <div class="goals-list-grid">
+                <div class="center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+                  </svg>
+                  </div>
+                <div class="center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+                  </svg></div>
+                <div class="center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+                  </svg></div>
+                <div class="text-list-1">
+                    <b>Goal 1</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus asperiores nesciunt assumenda laudantium. Placeat, maiores!</p>
+                </div>
+                <div class="text-list-2">
+                    <b>Goal 2</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus asperiores nesciunt assumenda laudantium. Placeat, maiores!</p>
+                </div>
+                <div class="text-list-3">
+                    <b>Goal 3</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus asperiores nesciunt assumenda laudantium. Placeat, maiores!</p>
+                </div>
+            </div>
+        </div>
+        <div class="list-2">
+            <h3>Team</h3>
+            <div class="grid-team">
+                <div class="list-2-icon center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+                    <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                  </svg>
+                  </div>
+                <div class="list-2-icon center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+                    <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                  </svg></div>
+                <div class="list-2-icon center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+                    <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                  </svg></div>
+                  <div class="list-2-icon center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+                    <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                  </svg></div>
+                <div class="member-1">
+                    <b>Member 01</b>
+                    <p>Name:Nguyen Van A</p>
+                </div>
+                <div class="member-2">
+                    <b>Member 02</b>
+                    <p>Name:Nguyen Van B</p>
+                </div>
+                <div class="member-3">
+                    <b>Member 03</b>
+                    <p>Name:Nguyen Van C</p>
+                </div>
+                <div class="member-4">
+                    <b>Member 04</b>
+                    <p>Name:Nguyen Van D</p>
+                </div>
+            </div>
+        </div>
+        <div class="list-3">
+            <h3>Scopes</h3>
+            <div class="flex">
+                <div>
+                    <b>IN</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, explicabo?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, modi.</p>
+                </div>
+                <div>
+                    <b>OUT</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, nisi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, sequi!</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="list-4">
+           <h3>Timeline</h3>
+           <div class="grid-4">
+            <div class="center-1 number1"><p>01</p></div>
+            <div class="center-1 number2 "><p>02</p></div>
+            <div class="center-1 number3"><p>03</p></div>
+            <div class="center-1 number4"><p>04</p></div>
+            <div class="center-1 number5"><p>05</p></div>
+            <div class="center-1 number6"><p>06</p></div>
+            <div class="center-1 number7"><p>07</p></div>
+            <div class="grid-4-item-1">
+                <b>Project Start</b>
+                <p>Lorem ipsum dolor</p>
+            </div>
+            <div class="grid-4-item-2">
+                <b>Project Date</b>
+                <p>Lorem ipsum dolor,</p>
+            </div>
+            <div class="grid-4-item-3">
+                <b>Project Start</b>
+                <p>Lorem ipsum dolor</p>
+            </div>
+            <div class="grid-4-item-4">
+                <b>Project Start</b>
+                <p>Lorem ipsum dolor</p>
+            </div>
+            <div class="grid-4-item-5">
+                <b>Project Start</b>
+                <p>Lorem ipsum dolor</p>
+            </div>
+            <div class="grid-4-item-6">
+                <b>Project Start</b>
+                <p>Lorem ipsum dolor</p>
+            </div>
+            <div class="grid-4-item-7">
+                <b>Project Start</b>
+                <p>Lorem ipsum dolor</p>
+            </div>
+           </div>
+        </div>
+        <div class="list-5">
+            <h3>Primary</h3>
+            <div class="grid-primary">
+                <div class="list-icon-2 center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+                  </svg>
+                  </div>
+                <div class="list-icon-2 center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+                        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+                      </svg>
+                </div>
+                <div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, temporibus.</p></div>
+                <div class="primary-text"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, recusandae!</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html> 
