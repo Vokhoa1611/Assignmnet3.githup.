@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-2</title>
-    <link rel="stylesheet" href="/Assignment-3/css/laptop.css">
-    <link rel="stylesheet" href="/Assignment-3/css/mobile.css">
-    <link rel="stylesheet" href="/Assignment-3/css/tablet.css">
-    <link rel="stylesheet" href="/Assignment-3/css/font.css">
+    <title>Assignment-3</title>
+    <link rel="stylesheet" href="css/laptop.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/font.css">
     <!-- Link Boottraps -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
           rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
@@ -20,14 +20,15 @@
     crossorigin="anonymous">
     </script>
     <section class="banner">
-        <div class="banner-img"><img src="/Assignment-3/img/banner.jpg" alt="banner" class="img-banner">
-        <div class="banner-text"> 
-            <h2>Nguyen Van A</h2>
-            <p>Full Stack Developer</p>
+        <div class="banner-img">
+            <img src="img/banner.jpg" alt="banner" class="img-banner">
+            <div class="banner-text">
+                <p class="name">Nguyen Van A</p>
+                <p class="job">Full Stack Developer</p>
+            </div>
+            <!-- Hình ảnh Avatar ở giữa navigation -->
+            <div class="img-avatar text-name-job"><img src="img/default-avatar.webp" alt="avatar"></div>
         </div>
-           
-        </div>
-       
         <div class="center-vertical">
             <div class="center-horizontal">
                 <div class="navbar flex">
@@ -51,11 +52,10 @@
                             
                         </div>
                     </div>
-                    <!-- Hình ảnh Avatar ở giữa navigation -->
-                    <div class="img-avatar text-name-job"><img src="/Assignment-3/img/default-avatar.webp" alt="avatar"></div>
+
                    <div class="flex-1">
                     <div class="navbar-list pd-40">
-                        <div class="icon-navbar ">
+                        <div class="icon-navbar">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                                 <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
                                 <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
@@ -92,9 +92,9 @@
                 <p><b>Địa chỉ</b>:Số 10, đường 10, Hà Nội</p>
                 <p><b>Website</b>:http:///abc.tech</p>
                 <div class="icon-social">
-                    <a href="#"><img src="/Assignment-3/img/fa-icon.png" alt=""></a>
-                    <a href="#"><img src="/Assignment-3/img/twitter-icon.png" alt=""></a>
-                    <a href="#"><img src="/Assignment-3/img/linkedin-icon.png" alt=""></a>
+                    <a href="#"><img src="img/fa-icon.png" alt=""></a>
+                    <a href="#"><img src="img/twitter-icon.png" alt=""></a>
+                    <a href="#"><img src="img/linkedin-icon.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -217,14 +217,14 @@
                     </ul>
                 </div>
             </div>
-            <div class=" passion">
-                <div class="passion-1">
+            <div class="background-item passion">
+                <div>
                     <h2>So Thich</h2>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="background-icon">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                    </svg>
                 </div>
-                <div class="passtion-list">
+                <div> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="background-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                </svg></div>
+                <div class="background-item-detail passtion-list" >
                     <div class="passtion-item">
                         <div class="cycle">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="passion-icon">
@@ -346,7 +346,7 @@
     <section class="certificate" id="Certi">
         <div class="certificate-flex">
             <div>
-                <img src="/Assignment-3/img/Cert_WEB.png" alt="chung chi" class="img-certificate">
+                <img src="img/Cert_DBI.png" alt="chung chi" class="img-certificate">
                 <p>CHUNG CHI LAP TRINH WEV-FUNIX</p>
                 <ul>
                     <li>Chung chi thuoc chuong trinh CCDN</li>
@@ -354,7 +354,7 @@
                 </ul>
             </div>
             <div>
-                <img src="/Assignment-3/img/Cert_PRF.png" alt="chung chi" class="img-certificate">
+                <img src="img/Cert_PRF.png" alt="chung chi" class="img-certificate">
                 <p>CHUNG CHI LAP TRINH JAVASCRIPT-FUNIX</p>
                 <ul>
                     <li>Chung chi thuoc chuong trinh CCDN</li>
@@ -362,7 +362,7 @@
                 </ul>
             </div>
             <div>
-                <img src="/Assignment-3/img/Cert_DBI.png" alt="chungchi" class="img-certificate">
+                <img src="img/Cert_DBI.png" alt="chungchi" class="img-certificate">
                 <p>CHUNG CHI THIET KE DATABASE-FUNIX</p>
                 <ul>
                     <li>Chung chi thuoc chuong trinh CCDN</li>
@@ -374,7 +374,7 @@
     <section id="project">
         <div  class="project">
             <div class="project-item-flex">
-                <div><img src="/Assignment-3/img/project_1.png" alt="project-1"></div>
+                <div><img src="img/project_1.png" alt="project-1"></div>
                 <div class="title-project border"><p>CV CA NHAN</p></div>
                 <div class="project-list-flex border">
                     <div><p class="time-project">2021</p></div>
@@ -402,7 +402,7 @@
                 </div>
             </div>
             <div class="project-item-flex">
-                <div><img src="/Assignment-3/img/project_2.png" alt="project-2"></div>
+                <div><img src="img/project_2.png" alt="project-2"></div>
                 <div class="title-project border"><p>Trang Web Quan Ly Thu Cung</p></div>
                 <div class="project-list-flex border">
                     <div><p class="time-project">2021</p></div>
@@ -430,7 +430,7 @@
                 </div>
             </div>
             <div class="project-item-flex">
-                <div><img src="/Assignment-3/img/project_3.png" alt="project-3"></div>
+                <div><img src="img/project_3.png" alt="project-3"></div>
                 <div class="title-project border"><p>Trang Web Xem Tin Tuc</p></div>
                 <div class="project-list-flex border">
                     <div><p class="time-project">2021</p></div>
@@ -461,16 +461,16 @@
         <section class="contact">
            <div class="contact-flex">
             <div class="contact-list">
-                <div><a href="#"><img src="/Assignment-3/img/fa-icon.png" alt=""></a></div>
+                <div><a href="#"><img src="img/fa-icon.png" alt=""></a></div>
                 <div><a href="#">Facebook</a></div>
     
             </div>
             <div class="contact-list">
-                <a href="#"><img src="/Assignment-3/img/twitter-icon.png" alt=""> </a>
+                <a href="#"><img src="img/twitter-icon.png" alt=""> </a>
                 <div><a href="#">Twitter</a></div>
             </div>
             <div class="contact-list">
-                <a href="#"><img src="/Assignment-3/img/linkedin-icon.png" alt=""></a>
+                <a href="#"><img src="img/linkedin-icon.png" alt=""></a>
                 <div><a href="#">Linkedin</a></div>
             </div>
            </div>
