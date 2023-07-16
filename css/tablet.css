@@ -11,6 +11,7 @@
     div.img-avatar{
         display:none;
        }
+    
        /* LY LICH */
     section.background{
         /* Dùng để căn giữa phần div.background-container-grid */
@@ -20,7 +21,9 @@
         background-color:#d8f5a2;
        }
     div.background-container-grid{
-      grid-template-columns:min-content min-content;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) ;
+      
+      
       /* width:100%;  */ /* Nếu để giá trị này thì chiều rộng của background-cotainer-grid luôn bằng section background, ta không căn giữa được*/
      }
      /* CHUNG CHI */
