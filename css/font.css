@@ -5,7 +5,7 @@
 }
 /* SECTION: Banner---------------------------------------------------------------------------------- */
 .banner-img{
-    position:relative;
+    position: relative;
 }
 .banner-text{
     position:absolute;
@@ -14,14 +14,10 @@
     transform: translate(50%,-50%);
     color:white;
 }
-.banner-text h2{
-    font-size:7vh; /* vh:Equal to 1% of the width of the initial containing block.*/
-    /* Để đáp ứng được kích thước trên từ thiết bị khác nhau (view) nên dùng vh,vw,vmin,vmax */
-}
-.banner-text p{
-    font-size:3.5vh;
-}
 
+.name{
+    font-size:4.5vh;
+}
 .banner-text{
     display:flex;
     flex-direction: column;
@@ -44,9 +40,11 @@
     align-items: center;
     /*Dùng để đè hình ảnh lên */
     position:absolute;
-    bottom:-28%; /*co bootraps -140%*/
-    right:50%;
-    transform: translate(50%,-50%);
+    bottom:0;
+    left:50%;
+    transform: translate(-50%,75%);
+    z-index: 1; /* Phai co thuoc tinh nay*/
+    
 }
 .img-avatar img{
     width:150px;
@@ -68,6 +66,11 @@
     gap:5px;
     padding:20px 5px;
 }
+.navbar{
+    display:flex;
+    flex-wrap: nowrap !important;
+        
+}
 .navbar-list a{
     text-decoration: none;
     color:black;
@@ -78,6 +81,7 @@
 .center-horizontal{
     display:flex;
     justify-content: center;
+    width:100%;
 }
 /* navabar-list: dùng để căn giữa dòng chữ và icon */
 .navbar-list{
@@ -86,6 +90,7 @@
     align-items: center;
     border:1px  solid grey;
     padding: 10px 30px;
+    
 }
 /* Hieu ung khi hover vao navbar */
 .navbar-list:hover {
@@ -110,13 +115,15 @@
 }
 .information-item{
     width:50%;
-    padding:60px 80px 50px;
+    
 }
 .cl-1{
     background-color:#ffd8a8;
+    padding:10px 100px 0 60px;
 }
 .cl-2{
     background-color:#ffc078;
+    padding:10px 60px;
 }
 .information h2{
     margin-bottom:22px;
@@ -129,10 +136,6 @@
 .background-icon{
     width:48px;
     height:48px;
-}
-.background-item {
-    
-    padding:20px;
 }
 .time{
     display:flex;
@@ -151,7 +154,10 @@
     display:grid;
     grid-template-columns:75% 25%;
     border:1px solid grey;
-    padding:30px;
+    padding-top:60px;
+    padding-left:30px;
+    padding-right:10px;
+    
 }
 .background-item-detail{
     grid-column: 1/-1;
@@ -165,7 +171,8 @@
 }
 .passtion-list{
     display:flex;
-    gap:20px;
+    gap:30px;
+    align-items: flex-start;
 }
 .passtion-item{
     display:flex;
@@ -207,20 +214,23 @@
     gap:20px;
     background-color:#d8f5a2;
 }
-/* .language,
+.language,
 .passion,
 .skill
 {
-    height:300px;
-} */
+    height:auto;
+}
 .passion-1{
     display:flex;
     gap:180px;
-    margin-bottom:30px;
+   
 }
 .passion{
-    padding:30px;
+    
     border:1px solid grey;
+    /* Muc dich de dua cac item len vi tri cao hon */
+    display:grid;
+    grid-template-rows: 40% 70%;
 }
 /* SECTION:Certificate -----------------------------------------------------------------*/
 .img-certificate{
@@ -314,6 +324,10 @@
     width:100%;
     background-color:antiquewhite;
     padding:20px;
+}
+/* Code de len Boottraps */
+h2{
+    margin-bottom:0 !important;
 }
 
    
